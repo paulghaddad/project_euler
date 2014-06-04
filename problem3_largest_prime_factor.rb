@@ -8,7 +8,8 @@ def largest_prime_factor(number)
   # Get all the factors; the prime factor can't be larger then the square root of the number itself
   factors = (2...sqrt(number)).select { |divisor| number % divisor == 0 }
 
-  # Test each factor, temporarily add it to the prime factors array. Break out of the iterator and remove the factor if it is divisible by another number.
+  # Test each factor, temporarily add it to the prime factors array. 
+  # Break out of the iterator and remove the factor if it is divisible by another number.
   prime_factors = []
   factors.each do |factor|
     prime_factors.push(factor)
@@ -24,6 +25,8 @@ def largest_prime_factor(number)
   prime_factors.max
 
 end
+
+# To find the largest prime factor of 600851475143:
 
 puts largest_prime_factor(600851475143)
 

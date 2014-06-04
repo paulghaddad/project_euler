@@ -4,7 +4,6 @@ describe '#fibonacci_numbers' do
   it 'returns [1, 2, 3, 5, 8, 13, 21, 34, 55, 89] when the maximum number is 100' do
     expect(fibonacci_numbers(100)).to eq([1, 2, 3, 5, 8, 13, 21, 34, 55, 89])
   end 
-
 end
 
 describe '#sum_of_even_fibonacci_numbers' do

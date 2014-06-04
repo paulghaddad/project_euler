@@ -5,5 +5,7 @@ describe '#smallest_multiple' do
     expect(smallest_multiple(10)).to eq(2520)
   end
 
-  it 'returns 906609 when the maximum number is 20' 
+  it 'returns 232792560 when the maximum number is 20' do
+    expect(smallest_multiple(20)).to eq(232792560)
+  end
 end

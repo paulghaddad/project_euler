@@ -31,4 +31,6 @@ def smallest_multiple(maximum_number)
 
 end
 
-puts smallest_multiple(10)
+# To find the smallest positive number that is evenly divisible by all of the numbers from 1 to 20:
+
+puts smallest_multiple(20)

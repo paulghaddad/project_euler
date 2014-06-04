@@ -20,4 +20,6 @@ def palindrome_product(number_of_digits)
 
 end
 
+# To find the largest palindrome made from the product of two 3-digit numbers:
+
 puts palindrome_product(3)
