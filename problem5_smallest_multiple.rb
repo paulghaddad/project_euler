@@ -6,17 +6,28 @@ def smallest_multiple(maximum_number)
 
   
   number_range = (1..maximum_number).to_a
-  number = 0
+  smallest_number = 0
   count = 0
+
+  # Incrementally increase the number while dividing it by divisors in the range of 1 to the maximum divisor
+  # When the count equals the count of numbers in number_range, stop the until loop. This is the lowest
+  # number disible by all the numbers in number_range
+  # break is used in the until loop to stop testing a particular number for efficiency. There is no reason to 
+  # continue dividing it by the remaining numbers if it isn't divisible by all of them.
+
   until count == maximum_number
     count = 0
-    number += 1
+    smallest_number += 1
     number_range.each do |divisor|
-      count += 1 if number % divisor == 0
+      if smallest_number % divisor == 0
+        count += 1 
+      else
+        break
+      end
     end
   end
 
-  number
+  smallest_number
 
 end
 
